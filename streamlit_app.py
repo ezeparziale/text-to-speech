@@ -1,6 +1,7 @@
-import streamlit as st
-import pyttsx3
 from datetime import datetime
+
+import pyttsx3
+import streamlit as st
 
 engine = pyttsx3.init()
 
@@ -8,9 +9,7 @@ st.title("Text to speech")
 text = st.text_input("Text", "Hola! como estas?", help="Text to reproduce")
 rate = st.slider("Speed", 0, 500, 145, help="Playback speed")
 volume = st.slider("Volumen", 0, 100, 80, help="Audio volumen")
-language = st.radio(
-    "Language",
-    ("English", "Spanish"))
+language = st.radio("Language", ("English", "Spanish"))
 save = st.checkbox("Save")
 
 if st.button("Speak"):
