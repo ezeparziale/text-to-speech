@@ -1,8 +1,8 @@
 # :loud_sound: Demo text to speech
 
-![image](img/app.png)
-
 Demo text to speech using pyttsx3 and streamlit.
+
+![image](img/app.png)
 
 ## :floppy_disk: Installation
 
