@@ -1,7 +1,5 @@
 # :loud_sound: Demo text to speech
 
-[![Visits Badge](https://badges.pufler.dev/visits/ezeparziale/text-to-speech?style=flat-square)]()
-
 ![image](img/app.png)
 
 Demo text to speech utilizando pyttsx3. Se utiliza streamlit para el diseño web.
