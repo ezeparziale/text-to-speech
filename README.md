@@ -41,5 +41,5 @@ pip install -r requirements.txt
 ## :runner: Run
 
 ```shell
-streamlit streamlit_app.py
+streamlit run streamlit_app.py
 ```
