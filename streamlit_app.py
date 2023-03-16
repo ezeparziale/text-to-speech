@@ -8,11 +8,13 @@ st.title("Text to speech")
 text = st.text_input("Text", "Hola! como estas?", help="Text to reproduce")
 rate = st.slider("Speed", 0, 500, 145, help="Playback speed")
 volume = st.slider("Volumen", 0, 100, 80, help="Audio volumen")
+language = st.radio(
+    "Language",
+    ("English", "Spanish"))
 save = st.checkbox("Save")
 
-
 if st.button("Speak"):
-    engine.setProperty("voice", "spanish")
+    engine.setProperty("voice", language)
     engine.setProperty("rate", rate)
     engine.setProperty("volume", volume / 100)
     engine.say(text)
