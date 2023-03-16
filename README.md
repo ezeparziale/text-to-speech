@@ -2,37 +2,37 @@
 
 ![image](img/app.png)
 
-Demo text to speech utilizando pyttsx3. Se utiliza streamlit para el diseño web.
+Demo text to speech using pyttsx3 and streamlit.
 
-## :floppy_disk: Instalación
+## :floppy_disk: Installation
 
-Crear ambiente virtual:
+Create virtual environment:
 
 ```shell
 python -m venv env
 ```
 
-Activar entorno virtual:
+Activate virtual environment:
 
-- En windows:
+- Windows:
 
 ```shell
 env/scripts/activate
 ```
 
-- En mac:
+- Mac:
 
 ```shell
 source env/bin/activate
 ```
 
-Actualizar pip:
+Update pip:
 
 ```shell
-python.exe -m pip install --upgrade pip
+python -m pip install --upgrade pip
 ```
 
-Instalar los requerimientos:
+Install requirements:
 
 ```shell
 pip install -r requirements.txt
