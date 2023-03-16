@@ -5,13 +5,13 @@ from datetime import datetime
 engine = pyttsx3.init()
 
 st.title("Text to speech")
-text = st.text_input("Texto", "Hola! como estas?", help="Texto a reproducir")
-rate = st.slider("Velocidad", 0, 500, 145, help="Velocidad de reproducción")
-volume = st.slider("Volumen", 0, 100, 80, help="Volumen del audio")
-guardar = st.checkbox("Guardar")
+text = st.text_input("Text", "Hola! como estas?", help="Text to reproduce")
+rate = st.slider("Speed", 0, 500, 145, help="Playback speed")
+volume = st.slider("Volumen", 0, 100, 80, help="Audio volumen")
+save = st.checkbox("Save")
 
 
-if st.button("Hablar"):
+if st.button("Speak"):
     engine.setProperty("voice", "spanish")
     engine.setProperty("rate", rate)
     engine.setProperty("volume", volume / 100)
@@ -19,7 +19,7 @@ if st.button("Hablar"):
     engine.runAndWait()
     engine.stop()
 
-    if guardar:
+    if save:
         curr_dt = datetime.now()
         file_name = int(round(curr_dt.timestamp()))
         engine.save_to_file(text, f"export\{file_name}.mp3")
